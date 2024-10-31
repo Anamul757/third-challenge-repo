@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-<!-- font awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- daisyui intall link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -20,89 +22,136 @@
     <!-- tailwind script -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'btn-primary': '#8CEC20',
-                'btn-secondary': '#ABEF5F80',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        'btn-primary': '#8CEC20',
+                        'btn-secondary': '#ABEF5F80',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
-      <!-- styles -->
-       <style>
+    <!-- styles -->
+    <style>
         .manrope-normal {
-        font-family: "Manrope", serif;
-      }
-      .para-des{
-        font-weight: 500;
-        font-size: 1rem;
-      }
-       </style>
-      
+            font-family: "Manrope", serif;
+        }
+
+        .para-des {
+            font-weight: 500;
+            font-size: 1rem;
+        }
+    </style>
+
 </head>
 
 <body class="manrope-normal">
     <header>
-        <!-- navbar section -->
-<nav class="lg:mx-5">
-    <div class="navbar bg-base-100 justify-between md:pr-5">
-        <div class="navbar-start">
-          <a class="btn btn-ghost text-xl"> <i class="fa-solid fa-arrow-right -rotate-45 bg-btn-primary rounded-3xl
-            p-1"></i></a> <p class="font-extrabold text-3xl">Rinterio</p></a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 para-des">
-            <li><a>Home</a></li>
-            <li><a>Services</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-            <li><a>Contact Us</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end gap-8 hidden md:flex">
-          <a><i class="fa-solid fa-magnifying-glass"></i></a>
-          <a><i class="fa-solid fa-cart-shopping"></i></i></a>
-          <a class="btn bg-btn-primary text-black font-extrabold">Book Consult<i class="fa-solid fa-arrow-right -rotate-45"></i></a>
-        </div>
-        <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
+        <!-- Navbar section -->
+        <nav class="lg:mx-5">
+            <div class="navbar bg-base-100 justify-between md:pr-5">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-xl"> <i class="fa-solid fa-arrow-right -rotate-45 bg-btn-primary rounded-3xl
+            p-1"></i></a>
+                    <p class="font-extrabold text-3xl">Rinterio</p></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 para-des">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-8 hidden md:flex">
+                    <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a><i class="fa-solid fa-cart-shopping"></i></i></a>
+                    <a class="btn bg-btn-primary text-black font-extrabold">Book Consult<i
+                            class="fa-solid fa-arrow-right -rotate-45"></i></a>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow para-des">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow para-des">
-              <li><a>Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
-            </ul>
-          </div>
-      </div>
-</nav>
-<!-- Details section -->
- <section class="flex flex-col text-center justify-center items-center mt-6">
-    <img src="./assets/banner.png" alt="">
-    <h2 class="font-extrabold text-6xl mt-6">A barn house of this design has a striking appearance</h2>
-    <p class="para-des mt-6">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
-    <button class="bg-btn-secondary rounded-3xl p-2 mt-2">view details <i class="fa-solid fa-arrow-right -rotate-45 bg-btn-primary rounded-full p-2"></i></button>
- </section>
+        </nav>
+        <!-- Details section -->
+        <section class="flex flex-col text-center justify-center items-center mt-6">
+            <img src="./assets/banner.png" alt="">
+            <h2 class="font-extrabold text-6xl mt-6">A barn house of this design has a striking appearance</h2>
+            <p class="para-des mt-6">The barn house captivates with its blend of rustic charm and modern sophistication,
+                featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural
+                light.</p>
+            <button class="bg-btn-secondary rounded-3xl p-2 mt-2">view details <i
+                    class="fa-solid fa-arrow-right -rotate-45 bg-btn-primary rounded-full p-2"></i></button>
+        </section>
     </header>
-    <main></main>
+    <main class="mt-8">
+        <!-- Thoughtful section -->
+        <section>
+            <div>
+
+                <div class="hero bg-base-200">
+
+                    <div class="hero-content flex-col lg:flex-row-reverse w-9/12">
+                        <img src="./assets/Rectangle.png" class="w-[530px] rounded-lg shadow-2xl h-full lg:mt-20 ml-8" />
+                        <div class="h-max">
+                            <div class="relative -left-16">
+                                <img src="./assets/Vector.png" alt="" class="hidden md:block">
+                            </div>
+                            <button class="border-none bg-white rounded-full p-2 mt-5"><i
+                                    class="fa-solid fa-arrow-right"></i>About Us</button>
+                            <h1 class="text-5xl font-bold mt-5">We design thoughtful, liveable spaces</h1>
+                            <p class="py-6 ">
+                                The barn house captivates with its blend of rustic charm and
+                                modern sophistication, featuring weathered wood, sleek metal accents.
+                            </p>
+                            <div class="card bg-base-100 shadow-xl mb-3">
+                                <div class="flex justify-center items-center ml-3">
+                                <div>
+            <img src="./assets/commercial.png" alt="">                        
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="card-title">Commercial</h2>
+                                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                            <div class="card bg-base-100 shadow-xl ">
+                                <div class="flex justify-center items-center ml-3">
+                                <div>
+            <img src="./assets/residential.png" alt="">                        
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="card-title">residential</h2>
+                                    <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
 
     </footer>
